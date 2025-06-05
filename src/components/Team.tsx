@@ -8,12 +8,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import amrinImg from '@/assets/img/amrin_alamsyah.jpg';
 
 interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
+  
 }
 
 interface SociaNetworkslProps {
@@ -26,6 +29,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=35",
     name: "Emma Smith",
     position: "Product Manager",
+    description: "",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -45,6 +49,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=60",
     name: "John Doe",
     position: "Tech Lead",
+    description: "",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -61,25 +66,31 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
+    imageUrl: amrinImg,
+    name: "Amrin Alamsyah Bugis",
     position: "Frontend Developer",
+    description: "",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/alamsyahbugis/",
       },
 
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/jendelaaj24",
       },
+      {
+        name: "Facebook",
+        url: "facebook.com/alamsyahAmrin281"
+      }
     ],
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
+    name: "La Ode Muhammad Akbar",
     position: "Backend Developer",
+    description: "",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -114,19 +125,18 @@ export const Team = () => {
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+         Tim{" "}
         </span>
-        Crew
+        Kami yang Berdedikasi
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+         Kami adalah sekelompok pemuda yang tergabung dalam komunitas belajar lokal bernama LCT (Local Class Technology), berkomitmen untuk menghadirkan solusi teknologi bagi desa dan masyarakat sekitar melalui LPT Management.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, description, socialNetworks }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -144,7 +154,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               <p>{description}</p>
               </CardContent>
 
               <CardFooter>

@@ -18,35 +18,33 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Digitalisasi Layanan Desa",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Kami membantu desa bertransformasi ke era digital melalui pembuatan website desa dan sistem layanan administrasi yang efisien dan terintegrasi.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Pemasangan Jaringan Internet",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+      "Kami menyediakan layanan pemasangan dan konfigurasi jaringan internet untuk kebutuhan desa, sekolah, UMKM, dan rumah tangga.",
+    image: image3, // gambar orang bekerja dengan koneksi
   },
   {
-    title: "AI-Powered insights",
+    title: "Layanan Berbasis AI",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "Kami sedang mengembangkan sistem cerdas berbasis AI untuk membantu proses pembuatan surat secara otomatis dan mendukung pelayanan desa yang lebih cepat dan akurat.",
+    image: image, // growth / teknologi
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Digitalisasi Layanan Desa",
+  "Tim Profesional & Lokal",
+  "User Interface Ramah Pengguna",
+  "Pemasangan Jaringan Internet",
+  "Layanan Pemasangan CCTV",
+  "Jasa Servis Perangkat",
+  "Desain yang Responsif",
 ];
 
 export const Features = () => {

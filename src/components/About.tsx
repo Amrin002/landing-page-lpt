@@ -18,16 +18,16 @@ export const About = () => {
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
+                  Tentang{" "}
                 </span>
-                Company
+                Kami
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+               
+      LPT Management (Local Project Technology Management) adalah sebuah startup yang dibentuk oleh komunitas belajar LCT (Local Class Technology) yang berfokus pada digitalisasi desa. Kami memiliki misi untuk membantu desa dalam membangun sistem layanan publik yang modern, efisien, dan transparan melalui pengembangan website desa dan aplikasi layanan masyarakat.
+      <br /><br />
+      Selain itu, kami juga bergerak di bidang pemasangan jaringan internet, instalasi CCTV, serta menyediakan layanan tukang servis untuk kebutuhan teknologi harian masyarakat. Kami percaya bahwa teknologi harus dapat diakses dan dimanfaatkan oleh semua kalangan, termasuk wilayah pedesaan.
+
               </p>
             </div>
 

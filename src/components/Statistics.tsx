@@ -6,19 +6,19 @@ export const Statistics = () => {
 
   const stats: statsProps[] = [
     {
-      quantity: "2.7K+",
+      quantity: "1+",
       description: "Users",
     },
     {
-      quantity: "1.8K+",
+      quantity: "1+",
       description: "Subscribers",
     },
     {
-      quantity: "112",
+      quantity: "1",
       description: "Downloads",
     },
     {
-      quantity: "4",
+      quantity: "1",
       description: "Products",
     },
   ];
